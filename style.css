@@ -1,107 +1,101 @@
 /* Basic Resets & Global Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    font-family: 'Arial', sans-serif;
+    font-size: 0.95em;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Dark background */
-    color: #e0e0e0; /* Light gray text for contrast */
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     line-height: 1.6;
-    display: flex; /* Use flexbox to center content */
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Make sure the body takes full viewport height */
+    min-height: 100vh;
+    cursor: crosshair; /* Use crosshair cursor */
 }
 
 .container {
-    max-width: 700px; /* Constrain content width */
-    width: 90%; /* Responsive width */
+    max-width: 700px;
+    width: 90%;
     padding: 20px;
-    box-sizing: border-box; /* Include padding in the width calculation */
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-    color: #4CAF50; /* A vibrant green for links */
+    color: #00F0FF;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #66BB6A; /* Slightly lighter green on hover */
+    color: #FF44CC;
 }
 
-/* Section Box Styling - No default border here */
+/* Section Box Styling */
 .section-box {
-    background-color: #2a2a2a; /* Slightly lighter dark background for sections */
+    background-color: #2a2a2a;
     padding: 25px 30px;
-    margin-bottom: 25px; /* Space between sections */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
-    text-align: left; /* Default all content within section-box to left-align */
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 .section-box:last-child {
-    margin-bottom: 0; /* No margin after the last section */
+    margin-bottom: 0;
 }
 
-/* --- Specific Section Border Colors --- */
-
-/* Header Section Border (e.g., "Welcome to My Site", "About Me" headers) */
+/* --- Section Border Colors --- */
 header.section-box {
-    border: 2px solid #FFD700; /* Gold border for the header */
+    border: 2px solid #9F6EFF;
 }
 
-/* Introduction Section Border (e.g., the "Hi! I'm Mi..." paragraph) */
 section.intro.section-box {
-    border: 2px solid #00FFFF; /* Cyan border for the intro */
+    border: 2px solid #00F0FF;
 }
 
-/* Main Content Section Border (e.g., the "Professional Info" or "Blog" text areas) */
 section.content.section-box {
-    border: 2px solid #FF69B4; /* Hot Pink border for content */
+    border: 2px solid #FF44CC;
 }
 
-/* Navigation Section Border */
 nav.main-nav.section-box {
-    border: 2px solid #7B68EE; /* Medium Slate Blue for the navigation */
+    border: 2px solid #39FF14;
 }
-
-/* --- End Specific Section Border Colors --- */
-
+/* --- End Section Border Colors --- */
 
 /* Header Styling */
 header h1 {
-    color: #FFD700; /* Make the main title match the header border color */
+    color: #9F6EFF;
     font-size: 2.5em;
-    text-align: center; /* Keep the main title centered */
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.3); /* Subtle line below title */
+    border-bottom: 1px solid rgba(159, 110, 255, 0.3);
 }
 
 /* Introduction Section Styling */
 .intro p {
     font-size: 1.1em;
-    text-align: left; /* Specifically set intro paragraph to left-align (overrides previous center) */
+    text-align: left;
     margin: 0;
 }
 
-/* Content Sections (for blog posts, professional details, etc.) */
+/* Content Section Text */
 .content p, .content ul, .content li {
-    text-align: left; /* Ensure all text within .content sections is left-aligned */
+    text-align: left;
 }
-
 
 /* Navigation Styling */
 .main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Arrange links horizontally */
-    justify-content: center; /* Keep the navigation items centered */
-    gap: 30px; /* Space between nav items */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    text-align: center; /* Ensure any text directly in nav (not li/a) is centered too */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .main-nav ul li a {
@@ -109,10 +103,11 @@ header h1 {
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
-    background-color: rgba(76, 175, 80, 0.1); /* Slight background for nav links */
-    transition: background-color 0.3s ease;
+    background-color: rgba(0, 240, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .main-nav ul li a:hover {
-    background-color: rgba(76, 175, 80, 0.2); /* More prominent background on hover */
+    background-color: rgba(0, 240, 255, 0.2);
+    color: #FF44CC;
 }
