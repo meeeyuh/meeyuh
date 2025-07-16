@@ -1,0 +1,86 @@
+/* Basic Resets & Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.6;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make sure the body takes full viewport height */
+}
+
+.container {
+    max-width: 700px; /* Constrain content width */
+    width: 90%; /* Responsive width */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50; /* A vibrant green for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #66BB6A; /* Slightly lighter green on hover */
+}
+
+/* Section Box Styling */
+.section-box {
+    background-color: #2a2a2a; /* Slightly lighter dark background for sections */
+    padding: 25px 30px;
+    margin-bottom: 25px; /* Space between sections */
+    border: 2px solid #FFD700; /* Gold border for a strong pop of color */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+.section-box:last-child {
+    margin-bottom: 0; /* No margin after the last section */
+}
+
+/* Header Styling */
+header h1 {
+    color: #FFD700; /* Make the main title match the border color */
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3); /* Subtle line below title */
+}
+
+/* Introduction Section Styling */
+.intro p {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation Styling */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange links horizontally */
+    justify-content: center; /* Center the navigation items */
+    gap: 30px; /* Space between nav items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.main-nav ul li a {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(76, 175, 80, 0.1); /* Slight background for nav links */
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(76, 175, 80, 0.2); /* More prominent background on hover */
+}
